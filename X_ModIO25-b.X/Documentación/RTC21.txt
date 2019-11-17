@@ -1,0 +1,20 @@
+
+--RtcInit:
+
+Se lee el RTC, si está detenido, se escribe una fecha por defecto (10 de Mayo 2011), 
+como la actual.
+
+--RtcEsc:
+
+Permite escribir la hora y fecha respetando el orden escrito en la lectura.
+
+--RtcLee:
+nos muestra el valor que tenga guardado el RTC. 
+RtcFechaHora[0]= año
+RtcFechaHora[1]= mes
+RtcFechaHora[2]= dia
+RtcFechaHora[3]= hora
+RtcFechaHora[4]= minuto
+RtcFechaHora[5]= segundo
+RtcFechaHora[6]= dia de la semana
+

@@ -1,0 +1,19 @@
+
+Tpo_init: 
+
+En esta rutina se inicializan las variables que serán usadas en el resto
+de las rutinas de tiempo, además toma los datos actuales del Reloj de Tiempo
+Real (RTC) para saber cuándo ocurrió un cambio de segundo, minuto, hora y día. 
+
+Tpo_Inter: 
+
+llama cada milisegundo y realiza un conteoascendente [TpoMsCont] hasta llegar a 
+los 50 ms. (Se consideró consultar el RTC cada 50 milisegundos para evitar un 
+desfasamiento grande entre el tiempo real del RTC y el de la rutina), 
+activando una variable llamada Tpo50msF
+
+Tpo_Ciclo: 
+
+si la variable (Tpo50msF) no se activa es fin de la rutina, si se activa
+lee el Reloj de tiempo real (RTC) se debe asegurar si hay cambio de segundos,
+minutos, hora y día para poder escribir los registros.
