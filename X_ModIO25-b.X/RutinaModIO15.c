@@ -12,9 +12,9 @@
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 
-//short MioCicloHabilitado=1;
-int MIOAdcAct[5],MIOAdcAnt[5],MIOAdcMin[5],MIOAdcDelta[5],
-    MIOAdcDivisor[5],MIOTpoDeltaMax,MIOTpoDeltaMin,MIOAdcLeido[5]; 
+//short MioCicloHabilitado=1
+int MIOAdcAct[9],MIOAdcAnt[9],MIOAdcMin[9],MIOAdcDelta[9],
+    MIOAdcDivisor[9],MIOTpoDeltaMax,MIOTpoDeltaMin,MIOAdcLeido[9]; 
 
 int Adc2_5,Adc5v,Adc5v1;
 
@@ -33,8 +33,11 @@ unsigned short MIOSegCont;
 
 void MIOInit (){        // Inicializa Mod entrada/Salida
                         // Puerto A como entradas analogicas
-    TRISA = 255;        //Puerto A son entradas
+    TRISA = 47;        //Puerto A 
     ANSELA = 0x2f;      //AN0->AN4 (RA0->RA3,RA5) : son analogicas
+    
+    TRISB = 255;       //Puerto B
+    ANSELB = 0x3C;
     
 //    MIOAdcDelta[0]=2;   //tomar el valor con diferenciade 2para que no registre
 //    MIOAdcDelta[1]=2;   //datos con diferencia de uno (muy iguales)
@@ -47,30 +50,50 @@ void MIOInit (){        // Inicializa Mod entrada/Salida
     MIOAdcDelta[2]=3;
     MIOAdcDelta[3]=3;
     MIOAdcDelta[4]=3;
+    MIOAdcDelta[5]=3;
+    MIOAdcDelta[6]=3;
+    MIOAdcDelta[7]=3;
+    MIOAdcDelta[8]=3;
 
     MIOAdcDivisor[0]=1;
     MIOAdcDivisor[1]=1;
     MIOAdcDivisor[2]=1;
     MIOAdcDivisor[3]=1;
     MIOAdcDivisor[4]=1;
+    MIOAdcDivisor[5]=1;
+    MIOAdcDivisor[6]=1;
+    MIOAdcDivisor[7]=1;
+    MIOAdcDivisor[8]=1;
 
     MIOAdcMin[0]=0;
     MIOAdcMin[1]=0;
     MIOAdcMin[2]=0;
     MIOAdcMin[3]=0;
     MIOAdcMin[4]=0;
+    MIOAdcMin[5]=0;
+    MIOAdcMin[6]=0;
+    MIOAdcMin[7]=0;
+    MIOAdcMin[8]=0;
 
     MrReg[0]=0;
     MrReg[1]=0;
     MrReg[2]=0;
     MrReg[3]=0;
     MrReg[4]=0;
+    MrReg[5]=0;
+    MrReg[6]=0;
+    MrReg[7]=0;
+    MrReg[8]=0;
 
     MIOAdcAnt[0]=255;
     MIOAdcAnt[1]=255;
     MIOAdcAnt[2]=255;
     MIOAdcAnt[3]=255;
     MIOAdcAnt[4]=255;
+    MIOAdcAnt[5]=255;
+    MIOAdcAnt[6]=255;
+    MIOAdcAnt[7]=255;
+    MIOAdcAnt[8]=255;
    
     MioCicloHabilitado=1;   
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -92,6 +115,10 @@ void MioInterr(){
     MIOAdcLeido[2] = ADC_Lee(2); 
 //    MIOAdcLeido[3] = ADC_Lee(3); 
     MIOAdcLeido[3] = ADC_Lee(4); 
+    MIOAdcLeido[4] = ADC_Lee(8); 
+    MIOAdcLeido[5] = ADC_Lee(9); 
+    MIOAdcLeido[6] = ADC_Lee(11); 
+    MIOAdcLeido[7] = ADC_Lee(13); 
     
 //    Adc5v1 = ADC_Lee(4)+Adc2_5; //Sumar valor del ADC 2.5 y variable creada
     
@@ -113,6 +140,10 @@ void MIOAdcLeido2Act(){      //Lee valores del ADC actuales y los guarda en arre
     MIOAdcAct[1] = MIOAdcLeido[1];
     MIOAdcAct[2] = MIOAdcLeido[2];
     MIOAdcAct[3] = MIOAdcLeido[3];
+    MIOAdcAct[4] = MIOAdcLeido[4];
+    MIOAdcAct[5] = MIOAdcLeido[5];
+    MIOAdcAct[6] = MIOAdcLeido[6];
+    MIOAdcAct[7] = MIOAdcLeido[7];
 //    Adc5v=Adc5v1;
   
     EnableInterrupts    //habilita interrupcion con datos ADC actuales guardados
@@ -130,11 +161,19 @@ void MIOAdcAjuste2_5(){       //Prepara para calibracion a 2.5
     MIOAdcAct[1] = (MIOAdcAct[1]*k1)/1000;  
     MIOAdcAct[2] = (MIOAdcAct[2]*k1)/1000;
     MIOAdcAct[3] = (MIOAdcAct[3]*k1)/1000;
+    MIOAdcAct[4] = (MIOAdcAct[4]*k1)/1000;
+    MIOAdcAct[5] = (MIOAdcAct[5]*k1)/1000;  
+    MIOAdcAct[6] = (MIOAdcAct[6]*k1)/1000;
+    MIOAdcAct[7] = (MIOAdcAct[7]*k1)/1000;
     
     if (MIOAdcAct[0]>4095){MIOAdcAct[0]=4095;}
     if (MIOAdcAct[1]>4095){MIOAdcAct[1]=4095;}
     if (MIOAdcAct[2]>4095){MIOAdcAct[2]=4095;}
     if (MIOAdcAct[3]>4095){MIOAdcAct[3]=4095;}
+    if (MIOAdcAct[4]>4095){MIOAdcAct[4]=4095;}
+    if (MIOAdcAct[5]>4095){MIOAdcAct[5]=4095;}
+    if (MIOAdcAct[6]>4095){MIOAdcAct[6]=4095;}
+    if (MIOAdcAct[7]>4095){MIOAdcAct[7]=4095;}
 }
 //void MIOAdcAjuste2_5(){       //Prepara para calibracion a 2.5
 //    long kx,k1; 
@@ -162,15 +201,23 @@ void MIOAdcAjuste2_5(){       //Prepara para calibracion a 2.5
 //------------------------------------------------------------------------------
 void MioPreparaReg(){       // compacta  10bits-->8bits + 2bits
     //MrReg de la PC : MrReg {2} del Pic corresponde al MrReg[4] de la PC
-    MrReg[2] = (MIOAdcAct[0] >> 4);   //cambia registros 10 bits a 8 bits
-    MrReg[3] = (MIOAdcAct[1] >> 4);   //(toma 8 bits más significativos)
+    MrReg[2] = MIOAdcAct[0] >> 4;   //cambia registros 10 bits a 8 bits
+    MrReg[3] = MIOAdcAct[1] >> 4;   //(toma 8 bits más significativos)
     MrReg[4] = MIOAdcAct[2] >> 4;
     MrReg[5] = MIOAdcAct[3] >> 4;
+    MrReg[6] = MIOAdcAct[4] >> 4;   //cambia registros 10 bits a 8 bits
+    MrReg[7] = MIOAdcAct[5] >> 4;   //(toma 8 bits más significativos)
+    MrReg[8] = MIOAdcAct[6] >> 4;
+    MrReg[9] = MIOAdcAct[7] >> 4;
     
-    MrReg[6] = (  ((MIOAdcAct[0] & 0xF) << 4) + //toma 2 bits menos significativos 
+    MrReg[10] = (  ((MIOAdcAct[0] & 0xF) << 4) + //toma 2 bits menos significativos 
                   ((MIOAdcAct[1] & 0xF) ) ) & 0xFF;
-    MrReg[7] = (  ((MIOAdcAct[2] & 0xF) << 4) + //toma 2 bits menos significativos 
+    MrReg[11] = (  ((MIOAdcAct[2] & 0xF) << 4) + //toma 2 bits menos significativos 
                   ((MIOAdcAct[3] & 0xF) ) ) & 0xFF;
+    MrReg[12] = (  ((MIOAdcAct[4] & 0xF) << 4) + //toma 2 bits menos significativos 
+                  ((MIOAdcAct[5] & 0xF) ) ) & 0xFF;
+    MrReg[13] = (  ((MIOAdcAct[6] & 0xF) << 4) + //toma 2 bits menos significativos 
+                  ((MIOAdcAct[7] & 0xF) ) ) & 0xFF;
 }
 //void MioPreparaReg(){       // compacta  10bits-->8bits + 2bits
 //    int temp2;
@@ -247,7 +294,11 @@ void MioCiclo() {       // Agrega regs cada 1/10 mseg.
         if (    (abs(MIOAdcAct[0]-MIOAdcAnt[0])<MIOAdcDelta[0]) &&
                 (abs(MIOAdcAct[1]-MIOAdcAnt[1])<MIOAdcDelta[1]) &&
                 (abs(MIOAdcAct[2]-MIOAdcAnt[2])<MIOAdcDelta[2]) &&
-                (abs(MIOAdcAct[3]-MIOAdcAnt[3])<MIOAdcDelta[3]) ) {
+                (abs(MIOAdcAct[3]-MIOAdcAnt[3])<MIOAdcDelta[3]) &&
+                (abs(MIOAdcAct[4]-MIOAdcAnt[4])<MIOAdcDelta[4]) &&
+                (abs(MIOAdcAct[5]-MIOAdcAnt[5])<MIOAdcDelta[5]) &&
+                (abs(MIOAdcAct[6]-MIOAdcAnt[6])<MIOAdcDelta[6]) &&
+                (abs(MIOAdcAct[7]-MIOAdcAnt[7])<MIOAdcDelta[7]) ) {
             return;
         }
     }
@@ -260,10 +311,15 @@ void MioCiclo() {       // Agrega regs cada 1/10 mseg.
     MrAgregaReg();       // Mem Roller agrega Hora12
     MIOSegCont=0;
 
+    //Actualizacion de variables
     MIOAdcAnt[0]=MIOAdcAct[0];
     MIOAdcAnt[1]=MIOAdcAct[1];
     MIOAdcAnt[2]=MIOAdcAct[2];
     MIOAdcAnt[3]=MIOAdcAct[3];
+    MIOAdcAnt[4]=MIOAdcAct[4];
+    MIOAdcAnt[5]=MIOAdcAct[5];
+    MIOAdcAnt[6]=MIOAdcAct[6];
+    MIOAdcAnt[7]=MIOAdcAct[7];
     //MIOAdcAnt[4]=MIOAdcAct[4];
 }  
 //------------------------------------------------------------------------------

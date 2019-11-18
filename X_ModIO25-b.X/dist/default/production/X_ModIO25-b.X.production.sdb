@@ -1,47 +1,47 @@
-[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[p LITE_MODE AUTOSTATIC IEEE_DBL LFSROK EMI_WORD IEEE_FLT ]
 [d version 1.1 ]
 [d edition pro ]
 [d chip 18F25K50 ]
 [d frameptr 4065 ]
-"5 C:\Solutronix\ModIO\X_ModIO25-b.X\ADC30.c
+"5 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\ADC30.c
 [v _ADC_Init ADC_Init `(v  1 e 1 0 ]
 "19
 [v _ADC_Lee ADC_Lee `(i  1 e 2 0 ]
-"4 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\abs.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\abs.c
 [v _abs abs `(i  1 e 2 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
-[v ___ftpack __ftpack `(f  1 e 3 0 ]
-"86 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
-[v ___ftadd __ftadd `(f  1 e 3 0 ]
-"54 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
-[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
-[v ___ftmul __ftmul `(f  1 e 3 0 ]
-"20 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftsub.c
-[v ___ftsub __ftsub `(f  1 e 3 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
-"11 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\memcpy.c
+"11 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
-"10 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcadd.c
-[v ___fladd __fladd `(d  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
 "245
-[v ___flsub __flsub `(d  1 e 3 0 ]
-"11 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcdiv.c
-[v ___fldiv __fldiv `(d  1 e 3 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcmul.c
-[v ___flmul __flmul `(d  1 e 3 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"28 C:\Solutronix\ModIO\X_ModIO25-b.X\I2C30.c
+"28 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\I2C30.c
 [v _I2CInit I2CInit `(v  1 e 1 0 ]
 "37
 [v _I2CStart I2CStart `(v  1 e 1 0 ]
@@ -55,7 +55,7 @@
 [v _I2CSendAck I2CSendAck `(v  1 e 1 0 ]
 "128
 [v _I2CSendNAck I2CSendNAck `(v  1 e 1 0 ]
-"18 C:\Solutronix\ModIO\X_ModIO25-b.X\Maestro21.c
+"18 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\Maestro21.c
 [v _MstInterr MstInterr `(v  1 e 1 0 ]
 "40
 [v _MstInit MstInit `(v  1 e 1 0 ]
@@ -63,7 +63,7 @@
 [v _MstCiclo MstCiclo `(v  1 e 1 0 ]
 "78
 [v _MstMain MstMain `(i  1 e 2 0 ]
-"72 C:\Solutronix\ModIO\X_ModIO25-b.X\MemoryRoller29.c
+"72 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\MemoryRoller29.c
 [v _MrInicializa MrInicializa `(v  1 e 1 0 ]
 "87
 [v _MrFormat MrFormat `(v  1 e 1 0 ]
@@ -93,7 +93,7 @@
 [v __MrLee _MrLee `(v  1 e 1 0 ]
 "307
 [v __MrEsc _MrEsc `(v  1 e 1 0 ]
-"103 C:\Solutronix\ModIO\X_ModIO25-b.X\ModIO24.c
+"103 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\ModIO24.c
 [v _Ppal_Init Ppal_Init `(v  1 e 1 0 ]
 "133
 [v _Ppal_Interr Ppal_Interr `(v  1 e 1 0 ]
@@ -105,11 +105,11 @@
 [v _Interr Interr `II(v  1 e 1 0 ]
 "391
 [v _main main `(i  1 e 2 0 ]
-"28 C:\Solutronix\ModIO\X_ModIO25-b.X\Mse21.c
+"28 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\Mse21.c
 [v _MseEsc MseEsc `(v  1 e 1 0 ]
 "48
 [v _MseLee MseLee `(v  1 e 1 0 ]
-"18 C:\Solutronix\ModIO\X_ModIO25-b.X\PruebaLed20.c
+"18 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\PruebaLed20.c
 [v _LedAmarilloInit LedAmarilloInit `(v  1 e 1 0 ]
 "25
 [v _LedAmarilloInterr LedAmarilloInterr `(v  1 e 1 0 ]
@@ -121,7 +121,7 @@
 [v _IntLedParpadea IntLedParpadea `(v  1 e 1 0 ]
 "83
 [v _IntDelay_ms IntDelay_ms `(v  1 e 1 0 ]
-"27 C:\Solutronix\ModIO\X_ModIO25-b.X\RedSerie13.c
+"27 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RedSerie13.c
 [v _RsCheckSum RsCheckSum `(uc  1 e 1 0 ]
 "45
 [v _PsRxRecibeCar PsRxRecibeCar `(uc  1 e 1 0 ]
@@ -139,13 +139,13 @@
 [v _PsTxInterrupt PsTxInterrupt `(v  1 e 1 0 ]
 "156
 [v _RsInterr RsInterr `(v  1 e 1 0 ]
-"10 C:\Solutronix\ModIO\X_ModIO25-b.X\RsComando14.c
+"10 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RsComando14.c
 [v _LeeRAM LeeRAM `(uc  1 e 1 0 ]
 "16
 [v _EscRAM EscRAM `(v  1 e 1 0 ]
 "26
 [v _MstRsComando MstRsComando `(v  1 e 1 0 ]
-"13 C:\Solutronix\ModIO\X_ModIO25-b.X\RTC21.c
+"13 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RTC21.c
 [v _Hex2Bcd Hex2Bcd `(uc  1 e 1 0 ]
 "19
 [v _Bcd2Hex Bcd2Hex `(uc  1 e 1 0 ]
@@ -155,7 +155,7 @@
 [v _RtcEsc RtcEsc `(v  1 e 1 0 ]
 "55
 [v _RtcLee RtcLee `(v  1 e 1 0 ]
-"34 C:\Solutronix\ModIO\X_ModIO25-b.X\RutinaModIO15.c
+"34 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RutinaModIO15.c
 [v _MIOInit MIOInit `(v  1 e 1 0 ]
 "84
 [v _MioInterr MioInterr `(v  1 e 1 0 ]
@@ -165,15 +165,15 @@
 [v _MIOAdcAjuste2_5 MIOAdcAjuste2_5 `(v  1 e 1 0 ]
 "163
 [v _MioPreparaReg MioPreparaReg `(v  1 e 1 0 ]
-"233
+"228
 [v _MioCiclo MioCiclo `(v  1 e 1 0 ]
-"14 C:\Solutronix\ModIO\X_ModIO25-b.X\RutinaTpo20.c
+"14 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RutinaTpo20.c
 [v _Tpo_init Tpo_init `(v  1 e 1 0 ]
 "30
 [v _Tpo_interr Tpo_interr `(v  1 e 1 0 ]
 "40
 [v _Tpo_Ciclo Tpo_Ciclo `(v  1 e 1 0 ]
-"225 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f25k50.h
+"225 C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18f25k50.h
 [v _ANSELA ANSELA `VEuc  1 e 1 @3931 ]
 "269
 [v _ANSELB ANSELB `VEuc  1 e 1 @3932 ]
@@ -318,12 +318,12 @@
 [v _TMR2IF TMR2IF `VEb  1 e 0 @31985 ]
 "14535
 [v _TXIF TXIF `VEb  1 e 0 @31988 ]
-"12 C:\Solutronix\ModIO\X_ModIO25-b.X\I2C30.c
+"12 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\I2C30.c
 [v _I2CAck I2CAck `s  1 e 2 0 ]
-"15 C:\Solutronix\ModIO\X_ModIO25-b.X\Maestro21.c
+"15 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\Maestro21.c
 [v _MstPpInicializadoF MstPpInicializadoF `uc  1 e 1 0 ]
 [v _MstPpEjecutaF MstPpEjecutaF `uc  1 e 1 0 ]
-"14 C:\Solutronix\ModIO\X_ModIO25-b.X\MemoryRoller29.c
+"14 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\MemoryRoller29.c
 [v _MrInicializado MrInicializado `b  1 e 0 0 ]
 "22
 [v _MrUltV MrUltV `i  1 e 2 0 ]
@@ -347,17 +347,17 @@
 [v _MrFecha12Ult MrFecha12Ult `ul  1 e 4 0 ]
 "38
 [v _MrHora12 MrHora12 `ui  1 e 2 0 ]
-"77 C:\Solutronix\ModIO\X_ModIO25-b.X\ModIO24.c
+"77 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\ModIO24.c
 [v _PpalRsCMD PpalRsCMD `us  1 e 2 0 ]
 "78
 [v _MioCicloHabilitado MioCicloHabilitado `s  1 e 2 0 ]
 "99
 [v _TempSeg TempSeg `i  1 e 2 0 ]
-"10 C:\Solutronix\ModIO\X_ModIO25-b.X\Mse21.c
+"10 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\Mse21.c
 [v _MseUltDirLeido MseUltDirLeido `i  1 e 2 0 ]
-"16 C:\Solutronix\ModIO\X_ModIO25-b.X\PruebaLed20.c
+"16 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\PruebaLed20.c
 [v _LedContMs LedContMs `i  1 e 2 0 ]
-"17 C:\Solutronix\ModIO\X_ModIO25-b.X\RedSerie13.c
+"17 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RedSerie13.c
 [v _RsRxBuffer RsRxBuffer `[30]uc  1 e 30 0 ]
 "18
 [v _RsTxBuffer RsTxBuffer `[30]uc  1 e 30 0 ]
@@ -376,7 +376,7 @@
 [v _RsRxCarDobleF RsRxCarDobleF `s  1 e 2 0 ]
 [v _RsTxTransmitiendoF RsTxTransmitiendoF `s  1 e 2 0 ]
 [v _RsTxCarDobleF RsTxCarDobleF `s  1 e 2 0 ]
-"2 C:\Solutronix\ModIO\X_ModIO25-b.X\RsComando14.c
+"2 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RsComando14.c
 [v _MonDir MonDir `i  1 e 2 0 ]
 "6
 [v _Car1 Car1 `uc  1 e 1 0 ]
@@ -384,9 +384,9 @@
 [v _Ptr1 Ptr1 `*.39v  1 e 2 0 ]
 "23
 [v _MonRsCMD MonRsCMD `us  1 e 2 0 ]
-"9 C:\Solutronix\ModIO\X_ModIO25-b.X\RTC21.c
+"9 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RTC21.c
 [v _RtcFechaHora RtcFechaHora `[7]uc  1 e 7 0 ]
-"16 C:\Solutronix\ModIO\X_ModIO25-b.X\RutinaModIO15.c
+"16 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RutinaModIO15.c
 [v _MIOAdcAct MIOAdcAct `[5]i  1 e 10 0 ]
 [v _MIOAdcAnt MIOAdcAnt `[5]i  1 e 10 0 ]
 [v _MIOAdcMin MIOAdcMin `[5]i  1 e 10 0 ]
@@ -398,7 +398,7 @@
 [v _MIOAdcLeido MIOAdcLeido `[5]i  1 e 10 0 ]
 "32
 [v _MIOSegCont MIOSegCont `us  1 e 2 0 ]
-"7 C:\Solutronix\ModIO\X_ModIO25-b.X\RutinaTpo20.c
+"7 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RutinaTpo20.c
 [v _TpoMsCont TpoMsCont `us  1 e 2 0 ]
 [v _Tpo50msF Tpo50msF `us  1 e 2 0 ]
 [v _TpoSegF TpoSegF `us  1 e 2 0 ]
@@ -410,71 +410,71 @@
 [v _TpoRtcMinAnt TpoRtcMinAnt `us  1 e 2 0 ]
 [v _TpoRtcHoraAnt TpoRtcHoraAnt `us  1 e 2 0 ]
 [v _TpoRtcDiaAnt TpoRtcDiaAnt `us  1 e 2 0 ]
-"391 C:\Solutronix\ModIO\X_ModIO25-b.X\ModIO24.c
+"391 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\ModIO24.c
 [v _main main `(i  1 e 2 0 ]
 {
 "393
 } 0
-"78 C:\Solutronix\ModIO\X_ModIO25-b.X\Maestro21.c
+"78 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\Maestro21.c
 [v _MstMain MstMain `(i  1 e 2 0 ]
 {
 "97
 } 0
-"103 C:\Solutronix\ModIO\X_ModIO25-b.X\ModIO24.c
+"103 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\ModIO24.c
 [v _Ppal_Init Ppal_Init `(v  1 e 1 0 ]
 {
 "130
 } 0
-"14 C:\Solutronix\ModIO\X_ModIO25-b.X\RutinaTpo20.c
+"14 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RutinaTpo20.c
 [v _Tpo_init Tpo_init `(v  1 e 1 0 ]
 {
 "28
 } 0
-"25 C:\Solutronix\ModIO\X_ModIO25-b.X\RTC21.c
+"25 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RTC21.c
 [v _RtcInit RtcInit `(v  1 e 1 0 ]
 {
 "38
 } 0
-"34 C:\Solutronix\ModIO\X_ModIO25-b.X\RutinaModIO15.c
+"34 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RutinaModIO15.c
 [v _MIOInit MIOInit `(v  1 e 1 0 ]
 {
 "82
 } 0
-"28 C:\Solutronix\ModIO\X_ModIO25-b.X\I2C30.c
+"28 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\I2C30.c
 [v _I2CInit I2CInit `(v  1 e 1 0 ]
 {
 "35
 } 0
-"5 C:\Solutronix\ModIO\X_ModIO25-b.X\ADC30.c
+"5 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\ADC30.c
 [v _ADC_Init ADC_Init `(v  1 e 1 0 ]
 {
 "17
 } 0
-"150 C:\Solutronix\ModIO\X_ModIO25-b.X\ModIO24.c
+"150 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\ModIO24.c
 [v _Ppal_Ciclo Ppal_Ciclo `(v  1 e 1 0 ]
 {
 "170
 } 0
-"40 C:\Solutronix\ModIO\X_ModIO25-b.X\RutinaTpo20.c
+"40 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RutinaTpo20.c
 [v _Tpo_Ciclo Tpo_Ciclo `(v  1 e 1 0 ]
 {
 "60
 } 0
-"233 C:\Solutronix\ModIO\X_ModIO25-b.X\RutinaModIO15.c
+"228 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RutinaModIO15.c
 [v _MioCiclo MioCiclo `(v  1 e 1 0 ]
 {
-"273
+"268
 } 0
-"4 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\abs.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\abs.c
 [v _abs abs `(i  1 e 2 0 ]
 {
 [v abs@a a `i  1 p 2 24 ]
 "9
 } 0
-"163 C:\Solutronix\ModIO\X_ModIO25-b.X\RutinaModIO15.c
+"163 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RutinaModIO15.c
 [v _MioPreparaReg MioPreparaReg `(v  1 e 1 0 ]
 {
-"179
+"174
 } 0
 "123
 [v _MIOAdcAjuste2_5 MIOAdcAjuste2_5 `(v  1 e 1 0 ]
@@ -483,7 +483,7 @@
 [v MIOAdcAjuste2_5@k1 k1 `l  1 a 4 0 ]
 "138
 } 0
-"15 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 {
 "17
@@ -493,7 +493,7 @@
 [v ___lmul@multiplicand multiplicand `ul  1 p 4 28 ]
 "129
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
 {
 "11
@@ -506,17 +506,17 @@
 [v ___aldiv@divisor divisor `l  1 p 4 40 ]
 "42
 } 0
-"109 C:\Solutronix\ModIO\X_ModIO25-b.X\RutinaModIO15.c
+"109 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RutinaModIO15.c
 [v _MIOAdcLeido2Act MIOAdcLeido2Act `(v  1 e 1 0 ]
 {
 "119
 } 0
-"40 C:\Solutronix\ModIO\X_ModIO25-b.X\Maestro21.c
+"40 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\Maestro21.c
 [v _MstInit MstInit `(v  1 e 1 0 ]
 {
 "66
 } 0
-"67 C:\Solutronix\ModIO\X_ModIO25-b.X\RedSerie13.c
+"67 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RedSerie13.c
 [v _RsInit RsInit `(v  1 e 1 0 ]
 {
 [v RsInit@Baudrate Baudrate `l  1 p 4 28 ]
@@ -528,7 +528,7 @@
 [v PsInit@Baudrate Baudrate `l  1 p 4 24 ]
 "65
 } 0
-"39 C:\Solutronix\ModIO\X_ModIO25-b.X\PruebaLed20.c
+"39 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\PruebaLed20.c
 [v _LedParpadea LedParpadea `(v  1 e 1 0 ]
 {
 "40
@@ -551,26 +551,26 @@
 {
 "22
 } 0
-"68 C:\Solutronix\ModIO\X_ModIO25-b.X\Maestro21.c
+"68 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\Maestro21.c
 [v _MstCiclo MstCiclo `(v  1 e 1 0 ]
 {
 "76
 } 0
-"26 C:\Solutronix\ModIO\X_ModIO25-b.X\RsComando14.c
+"26 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RsComando14.c
 [v _MstRsComando MstRsComando `(v  1 e 1 0 ]
 {
 "28
 [v MstRsComando@Ind Ind `us  1 a 2 17 ]
 "123
 } 0
-"176 C:\Solutronix\ModIO\X_ModIO25-b.X\ModIO24.c
+"176 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\ModIO24.c
 [v _Ppal_RsComando Ppal_RsComando `(v  1 e 1 0 ]
 {
 "185
 [v Ppal_RsComando@ind ind `us  1 a 2 12 ]
 "374
 } 0
-"40 C:\Solutronix\ModIO\X_ModIO25-b.X\RTC21.c
+"40 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RTC21.c
 [v _RtcEsc RtcEsc `(v  1 e 1 0 ]
 {
 "53
@@ -587,7 +587,7 @@
 [v Hex2Bcd@Hex1 Hex1 `uc  1 a 1 35 ]
 "17
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
 {
 "11
@@ -598,7 +598,7 @@
 [v ___awmod@divisor divisor `i  1 p 2 26 ]
 "35
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
 "11
@@ -611,7 +611,7 @@
 [v ___awdiv@divisor divisor `i  1 p 2 26 ]
 "42
 } 0
-"75 C:\Solutronix\ModIO\X_ModIO25-b.X\RedSerie13.c
+"75 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RedSerie13.c
 [v _RsTxEnviaMsg RsTxEnviaMsg `(v  1 e 1 0 ]
 {
 "78
@@ -634,7 +634,7 @@
 [v RsCheckSum@RsBuffer RsBuffer `*.39uc  1 p 2 26 ]
 "42
 } 0
-"206 C:\Solutronix\ModIO\X_ModIO25-b.X\MemoryRoller29.c
+"206 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\MemoryRoller29.c
 [v _MrUlt MrUlt `(v  1 e 1 0 ]
 {
 "209
@@ -661,7 +661,7 @@
 [v __MrLee@MrReg1 MrReg1 `*.39uc  1 p 2 6 ]
 "305
 } 0
-"48 C:\Solutronix\ModIO\X_ModIO25-b.X\Mse21.c
+"48 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\Mse21.c
 [v _MseLee MseLee `(v  1 e 1 0 ]
 {
 "50
@@ -672,7 +672,7 @@
 [v MseLee@NBytes NBytes `i  1 p 2 44 ]
 "69
 } 0
-"87 C:\Solutronix\ModIO\X_ModIO25-b.X\MemoryRoller29.c
+"87 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\MemoryRoller29.c
 [v _MrFormat MrFormat `(v  1 e 1 0 ]
 {
 "112
@@ -729,7 +729,7 @@
 [v __CalculaRegPos@MrNReg1 MrNReg1 `ui  1 p 2 31 ]
 "235
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
 {
 "11
@@ -739,7 +739,7 @@
 [v ___lwmod@divisor divisor `ui  1 p 2 26 ]
 "26
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "11
@@ -751,7 +751,7 @@
 [v ___lwdiv@divisor divisor `ui  1 p 2 26 ]
 "31
 } 0
-"28 C:\Solutronix\ModIO\X_ModIO25-b.X\Mse21.c
+"28 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\Mse21.c
 [v _MseEsc MseEsc `(v  1 e 1 0 ]
 {
 "30
@@ -762,14 +762,14 @@
 [v MseEsc@NBytes NBytes `i  1 p 2 44 ]
 "45
 } 0
-"55 C:\Solutronix\ModIO\X_ModIO25-b.X\RTC21.c
+"55 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RTC21.c
 [v _RtcLee RtcLee `(v  1 e 1 0 ]
 {
 "56
 [v RtcLee@Char1 Char1 `uc  1 a 1 40 ]
 "91
 } 0
-"49 C:\Solutronix\ModIO\X_ModIO25-b.X\I2C30.c
+"49 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\I2C30.c
 [v _I2CStop I2CStop `(v  1 e 1 0 ]
 {
 "57
@@ -807,7 +807,7 @@
 [v I2CEscByte@I2CByte I2CByte `us  1 p 2 36 ]
 "89
 } 0
-"19 C:\Solutronix\ModIO\X_ModIO25-b.X\RTC21.c
+"19 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RTC21.c
 [v _Bcd2Hex Bcd2Hex `(uc  1 e 1 0 ]
 {
 [v Bcd2Hex@Bcd1 Bcd1 `uc  1 a 1 wreg ]
@@ -819,14 +819,14 @@
 [v Bcd2Hex@Bcd1 Bcd1 `uc  1 a 1 26 ]
 "23
 } 0
-"258 C:\Solutronix\ModIO\X_ModIO25-b.X\MemoryRoller29.c
+"258 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\MemoryRoller29.c
 [v _MrSeparaFecha MrSeparaFecha `(v  1 e 1 0 ]
 {
 "259
 [v MrSeparaFecha@MrAmPm MrAmPm `us  1 a 2 36 ]
 "267
 } 0
-"10 C:\Solutronix\ModIO\X_ModIO25-b.X\RsComando14.c
+"10 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RsComando14.c
 [v _LeeRAM LeeRAM `(uc  1 e 1 0 ]
 {
 [v LeeRAM@Dir Dir `i  1 p 2 34 ]
@@ -839,7 +839,7 @@
 [v EscRAM@Car2P Car2P `*.39v  1 p 2 36 ]
 "21
 } 0
-"11 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\memcpy.c
+"11 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
 {
 "20
@@ -852,7 +852,7 @@
 [v memcpy@n n `ui  1 p 2 28 ]
 "32
 } 0
-"378 C:\Solutronix\ModIO\X_ModIO25-b.X\ModIO24.c
+"378 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\ModIO24.c
 [v _Interr Interr `II(v  1 e 1 0 ]
 {
 "387
@@ -862,17 +862,17 @@
 {
 "146
 } 0
-"30 C:\Solutronix\ModIO\X_ModIO25-b.X\RutinaTpo20.c
+"30 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RutinaTpo20.c
 [v _Tpo_interr Tpo_interr `(v  1 e 1 0 ]
 {
 "38
 } 0
-"84 C:\Solutronix\ModIO\X_ModIO25-b.X\RutinaModIO15.c
+"84 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RutinaModIO15.c
 [v _MioInterr MioInterr `(v  1 e 1 0 ]
 {
 "105
 } 0
-"19 C:\Solutronix\ModIO\X_ModIO25-b.X\ADC30.c
+"19 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\ADC30.c
 [v _ADC_Lee ADC_Lee `(i  1 e 2 0 ]
 {
 "20
@@ -881,12 +881,12 @@
 [v ADC_Lee@AdcCanal AdcCanal `s  1 p 2 0 ]
 "29
 } 0
-"18 C:\Solutronix\ModIO\X_ModIO25-b.X\Maestro21.c
+"18 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\Maestro21.c
 [v _MstInterr MstInterr `(v  1 e 1 0 ]
 {
 "27
 } 0
-"156 C:\Solutronix\ModIO\X_ModIO25-b.X\RedSerie13.c
+"156 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\RedSerie13.c
 [v _RsInterr RsInterr `(v  1 e 1 0 ]
 {
 "159
@@ -914,7 +914,7 @@
 {
 "47
 } 0
-"25 C:\Solutronix\ModIO\X_ModIO25-b.X\PruebaLed20.c
+"25 D:\Present Semester\Datalogger PIC y PC\X_ModIO25-b.X\PruebaLed20.c
 [v _LedAmarilloInterr LedAmarilloInterr `(v  1 e 1 0 ]
 {
 "37

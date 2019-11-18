@@ -1,10 +1,10 @@
 
 # 1 "ModIO24.c"
 
-# 4 "C:\Program Files (x86)\Microchip\xc8\v1.41\include\__size_t.h"
+# 4 "C:\Program Files (x86)\Microchip\xc8\v1.40\include\__size_t.h"
 typedef unsigned size_t;
 
-# 7 "C:\Program Files (x86)\Microchip\xc8\v1.41\include\stdarg.h"
+# 7 "C:\Program Files (x86)\Microchip\xc8\v1.40\include\stdarg.h"
 typedef void * va_list[1];
 
 #pragma intrinsic(__va_start)
@@ -13,17 +13,17 @@ extern void * __va_start(void);
 #pragma intrinsic(__va_arg)
 extern void * __va_arg(void *, ...);
 
-# 43 "C:\Program Files (x86)\Microchip\xc8\v1.41\include\stdio.h"
+# 43 "C:\Program Files (x86)\Microchip\xc8\v1.40\include\stdio.h"
 struct __prbuf
 {
 char * ptr;
 void (* func)(char);
 };
 
-# 29 "C:\Program Files (x86)\Microchip\xc8\v1.41\include\errno.h"
+# 29 "C:\Program Files (x86)\Microchip\xc8\v1.40\include\errno.h"
 extern int errno;
 
-# 12 "C:\Program Files (x86)\Microchip\xc8\v1.41\include\conio.h"
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.40\include\conio.h"
 extern void init_uart(void);
 
 extern char getch(void);
@@ -37,7 +37,7 @@ extern __bit kbhit(void);
 extern char * cgets(char *);
 extern void cputs(const char *);
 
-# 88 "C:\Program Files (x86)\Microchip\xc8\v1.41\include\stdio.h"
+# 88 "C:\Program Files (x86)\Microchip\xc8\v1.40\include\stdio.h"
 extern int cprintf(char *, ...);
 #pragma printf_check(cprintf)
 
@@ -64,7 +64,7 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
 
-# 7 "C:\Program Files (x86)\Microchip\xc8\v1.41\include\stdlib.h"
+# 7 "C:\Program Files (x86)\Microchip\xc8\v1.40\include\stdlib.h"
 typedef unsigned short wchar_t;
 
 # 15
@@ -113,11 +113,11 @@ extern void free(void *);
 extern void * realloc(void *, size_t);
 
 
-# 13 "C:\Program Files (x86)\Microchip\xc8\v1.41\include\xc8debug.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.40\include\xc8debug.h"
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
 
-# 86 "C:\Program Files (x86)\Microchip\xc8\v1.41\include\stdlib.h"
+# 86 "C:\Program Files (x86)\Microchip\xc8\v1.40\include\stdlib.h"
 extern int atexit(void (*)(void));
 extern char * getenv(const char *);
 extern char ** environ;
@@ -138,7 +138,7 @@ extern char * ultoa(char * buf, unsigned long val, int base);
 
 extern char * ftoa(float f, int * status);
 
-# 14 "C:\Program Files (x86)\Microchip\xc8\v1.41\include\string.h"
+# 14 "C:\Program Files (x86)\Microchip\xc8\v1.40\include\string.h"
 extern void * memcpy(void *, const void *, size_t);
 extern void * memmove(void *, const void *, size_t);
 extern void * memset(void *, int, size_t);
@@ -238,12 +238,12 @@ extern char * strrichr(const char *, int);
 
 #pragma config EBTRB = OFF
 
-# 26 "C:\Program Files (x86)\Microchip\xc8\v1.41\include\htc.h"
+# 26 "C:\Program Files (x86)\Microchip\xc8\v1.40\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
 
 extern double __fpnormalize(double);
 
-# 49 "C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f25k50.h"
+# 49 "C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18f25k50.h"
 extern volatile unsigned char SRCON1 @ 0xF57;
 
 asm("SRCON1 equ 0F57h");
@@ -6788,7 +6788,7 @@ extern volatile __bit nW @ (((unsigned) &SSP1STAT)*8) + 2;
 
 extern volatile __bit nWRITE @ (((unsigned) &SSP1STAT)*8) + 2;
 
-# 18 "C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18.h"
+# 18 "C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18.h"
 __attribute__((__unsupported__("The " "flash_write" " routine is no longer supported. Please use the MPLAB X MCC."))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
 __attribute__((__unsupported__("The " "EraseFlash" " routine is no longer supported. Please use the MPLAB X MCC."))) void EraseFlash(unsigned long startaddr, unsigned long endaddr);
 
@@ -6797,13 +6797,13 @@ __attribute__((__unsupported__("The " "EraseFlash" " routine is no longer suppor
 #pragma intrinsic(__nop)
 extern void __nop(void);
 
-# 135
+# 133
 __attribute__((__unsupported__("The " "Read_b_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) unsigned char Read_b_eep(unsigned int badd);
 __attribute__((__unsupported__("The " "Busy_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) void Busy_eep(void);
 __attribute__((__unsupported__("The " "Write_b_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) void Write_b_eep(unsigned int badd, unsigned char bdat);
 
 
-# 160
+# 158
 #pragma intrinsic(_delay)
 extern __nonreentrant void _delay(unsigned long);
 #pragma intrinsic(_delaywdt)
@@ -7923,14 +7923,13 @@ MrReg[3] = (MIOAdcAct[1] >> 4);
 MrReg[4] = MIOAdcAct[2] >> 4;
 MrReg[5] = MIOAdcAct[3] >> 4;
 
-# 175
 MrReg[6] = ( ((MIOAdcAct[0] & 0xF) << 4) +
-((MIOAdcAct[1] & 0xF) ) ) & 0xFF0;
+((MIOAdcAct[1] & 0xF) ) ) & 0xFF;
 MrReg[7] = ( ((MIOAdcAct[2] & 0xF) << 4) +
-((MIOAdcAct[3] & 0xF) ) ) & 0xFF0;
+((MIOAdcAct[3] & 0xF) ) ) & 0xFF;
 }
 
-# 233
+# 228
 void MioCiclo() {
 int temp2;
 if (!MioCicloHabilitado) {return;}

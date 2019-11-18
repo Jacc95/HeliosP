@@ -3,7 +3,7 @@
 //#define MrPrueba1           // usar RAM
 //------------------------------------------------------------------------------
 //#define MrLen       7       // debeser >= 7.  (5 de datos +2 de la hora)
-#define MrLen       8       // debeser >= 8.  (4 entradas (4+2)bytes= 6 de datos +2 de la hora)
+#define MrLen       12       // debeser >= 8.  (8 entradas (4+2)bytes= 6 de datos +2 de la hora)
 #define MrPor       255     // indica asterisco
 #define MrPorFecha  254     // indica registro de fecha
 //#define MrNRegMax   10    // # Regs total (8000 para 24LC512)

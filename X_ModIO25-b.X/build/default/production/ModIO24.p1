@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"4549 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f25k50.h
+"4549 C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18f25k50.h
 [s S191 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S191 . TRISC0 TRISC1 TRISC2 . TRISC4 TRISC5 TRISC6 TRISC7 ]
 "4559
@@ -35,12 +35,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 "9 PruebaLed20.c
 [v _Delay_ms `(v ~T0 @X0 0 ef1`i ]
 [v F5662 `(v ~T0 @X0 1 tf1`ul ]
-"161 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18.h
+"159 C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18.h
 [v __delay `JF5662 ~T0 @X0 0 e ]
 [p i __delay ]
 "12 PruebaLed20.c
 [v _IntDelay_ms `(v ~T0 @X0 0 ef1`i ]
-"6696 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f25k50.h
+"6696 C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18f25k50.h
 [v _RCREG1 `Vuc ~T0 @X0 0 e@4014 ]
 "6659
 [v _TXREG1 `Vuc ~T0 @X0 0 e@4013 ]
@@ -58,11 +58,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _RCIF `Vb ~T0 @X0 0 e@31989 ]
 "14535
 [v _TXIF `Vb ~T0 @X0 0 e@31988 ]
-"14 C:\Program Files (x86)\Microchip\xc8\v1.41\include\string.h
+"14 C:\Program Files (x86)\Microchip\xc8\v1.40\include\string.h
 [v _memcpy `(*v ~T0 @X0 0 ef3`*v`*Cv`ui ]
 "74 ModIO24.c
 [v _Ppal_RsComando `(v ~T0 @X0 0 ef ]
-"2903 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f25k50.h
+"2903 C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18f25k50.h
 [v _PORTB `Vuc ~T0 @X0 0 e@3969 ]
 "4317
 [v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
@@ -84,7 +84,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _Ppal_Init `(v ~T0 @X0 0 ef ]
 "71
 [v _Ppal_Ciclo `(v ~T0 @X0 0 ef ]
-"9319 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f25k50.h
+"9319 C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18f25k50.h
 [v _SSP1CON1 `Vuc ~T0 @X0 0 e@4038 ]
 "2909
 [s S131 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -129,7 +129,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v __MrSgte `(ui ~T0 @X0 0 ef1`ui ]
 "65
 [v __MrLee `(v ~T0 @X0 0 ef2`ui`*uc ]
-"4096 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f25k50.h
+"4096 C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18f25k50.h
 [v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
 "8723
 [v _ADCON2 `Vuc ~T0 @X0 0 e@4032 ]
@@ -145,9 +145,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _ADRESL `Vuc ~T0 @X0 0 e@4035 ]
 "13471
 [v _GIE `Vb ~T0 @X0 0 e@32663 ]
-"92 C:\Program Files (x86)\Microchip\xc8\v1.41\include\stdlib.h
+"92 C:\Program Files (x86)\Microchip\xc8\v1.40\include\stdlib.h
 [v _abs `(i ~T0 @X0 0 ef1`i ]
-"14393 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f25k50.h
+"14393 C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18f25k50.h
 [v _TMR2IF `Vb ~T0 @X0 0 e@31985 ]
 [p mainexit ]
 [; ;__size_t.h: 4: typedef unsigned size_t;
@@ -340,7 +340,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;pic18f25k50.h: 49: extern volatile unsigned char SRCON1 @ 0xF57;
-"51 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f25k50.h
+"51 C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18f25k50.h
 [; ;pic18f25k50.h: 51: asm("SRCON1 equ 0F57h");
 [; <" SRCON1 equ 0F57h ;# ">
 [; ;pic18f25k50.h: 54: typedef union {
@@ -5326,12 +5326,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 18: __attribute__((__unsupported__("The " "flash_write" " routine is no longer supported. Please use the MPLAB X MCC."))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
 [; ;pic18.h: 19: __attribute__((__unsupported__("The " "EraseFlash" " routine is no longer supported. Please use the MPLAB X MCC."))) void EraseFlash(unsigned long startaddr, unsigned long endaddr);
 [; ;pic18.h: 43: extern void __nop(void);
-[; ;pic18.h: 135: __attribute__((__unsupported__("The " "Read_b_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) unsigned char Read_b_eep(unsigned int badd);
-[; ;pic18.h: 136: __attribute__((__unsupported__("The " "Busy_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) void Busy_eep(void);
-[; ;pic18.h: 137: __attribute__((__unsupported__("The " "Write_b_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) void Write_b_eep(unsigned int badd, unsigned char bdat);
-[; ;pic18.h: 161: extern __nonreentrant void _delay(unsigned long);
-[; ;pic18.h: 163: extern __nonreentrant void _delaywdt(unsigned long);
-[; ;pic18.h: 165: extern __nonreentrant void _delay3(unsigned char);
+[; ;pic18.h: 133: __attribute__((__unsupported__("The " "Read_b_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) unsigned char Read_b_eep(unsigned int badd);
+[; ;pic18.h: 134: __attribute__((__unsupported__("The " "Busy_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) void Busy_eep(void);
+[; ;pic18.h: 135: __attribute__((__unsupported__("The " "Write_b_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) void Write_b_eep(unsigned int badd, unsigned char bdat);
+[; ;pic18.h: 159: extern __nonreentrant void _delay(unsigned long);
+[; ;pic18.h: 161: extern __nonreentrant void _delaywdt(unsigned long);
+[; ;pic18.h: 163: extern __nonreentrant void _delay3(unsigned char);
 [; ;PruebaLed20.c: 9: void Delay_ms (int delay);
 [; ;PruebaLed20.c: 10: void LedParpadea (int Nveces);
 [; ;PruebaLed20.c: 12: void IntDelay_ms (int delay);
@@ -8380,117 +8380,117 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;RutinaModIO15.c: 168: MrReg[5] = MIOAdcAct[3] >> 4;
 "168
 [e = *U + &U _MrReg * -> -> -> 5 `i `ui `ux -> -> # *U &U _MrReg `ui `ux -> >> *U + &U _MIOAdcAct * -> -> -> 3 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux -> 4 `i `uc ]
-[; ;RutinaModIO15.c: 175: MrReg[6] = ( ((MIOAdcAct[0] & 0xF) << 4) +
-[; ;RutinaModIO15.c: 176: ((MIOAdcAct[1] & 0xF) ) ) & 0xFF0;
-"176
-[e = *U + &U _MrReg * -> -> -> 6 `i `ui `ux -> -> # *U &U _MrReg `ui `ux -> & + << & *U + &U _MIOAdcAct * -> -> -> 0 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux -> 15 `i -> 4 `i & *U + &U _MIOAdcAct * -> -> -> 1 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux -> 15 `i -> 4080 `i `uc ]
-[; ;RutinaModIO15.c: 177: MrReg[7] = ( ((MIOAdcAct[2] & 0xF) << 4) +
-[; ;RutinaModIO15.c: 178: ((MIOAdcAct[3] & 0xF) ) ) & 0xFF0;
-"178
-[e = *U + &U _MrReg * -> -> -> 7 `i `ui `ux -> -> # *U &U _MrReg `ui `ux -> & + << & *U + &U _MIOAdcAct * -> -> -> 2 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux -> 15 `i -> 4 `i & *U + &U _MIOAdcAct * -> -> -> 3 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux -> 15 `i -> 4080 `i `uc ]
-[; ;RutinaModIO15.c: 179: }
-"179
+[; ;RutinaModIO15.c: 170: MrReg[6] = ( ((MIOAdcAct[0] & 0xF) << 4) +
+[; ;RutinaModIO15.c: 171: ((MIOAdcAct[1] & 0xF) ) ) & 0xFF;
+"171
+[e = *U + &U _MrReg * -> -> -> 6 `i `ui `ux -> -> # *U &U _MrReg `ui `ux -> & + << & *U + &U _MIOAdcAct * -> -> -> 0 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux -> 15 `i -> 4 `i & *U + &U _MIOAdcAct * -> -> -> 1 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux -> 15 `i -> 255 `i `uc ]
+[; ;RutinaModIO15.c: 172: MrReg[7] = ( ((MIOAdcAct[2] & 0xF) << 4) +
+[; ;RutinaModIO15.c: 173: ((MIOAdcAct[3] & 0xF) ) ) & 0xFF;
+"173
+[e = *U + &U _MrReg * -> -> -> 7 `i `ui `ux -> -> # *U &U _MrReg `ui `ux -> & + << & *U + &U _MIOAdcAct * -> -> -> 2 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux -> 15 `i -> 4 `i & *U + &U _MIOAdcAct * -> -> -> 3 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux -> 15 `i -> 255 `i `uc ]
+[; ;RutinaModIO15.c: 174: }
+"174
 [e :UE 818 ]
 }
-"233
+"228
 [v _MioCiclo `(v ~T0 @X0 1 ef ]
 {
-[; ;RutinaModIO15.c: 233: void MioCiclo() {
+[; ;RutinaModIO15.c: 228: void MioCiclo() {
 [e :U _MioCiclo ]
 [f ]
-"234
+"229
 [v _temp2 `i ~T0 @X0 1 a ]
-[; ;RutinaModIO15.c: 234: int temp2;
-[; ;RutinaModIO15.c: 235: if (!MioCicloHabilitado) {return;}
-"235
+[; ;RutinaModIO15.c: 229: int temp2;
+[; ;RutinaModIO15.c: 230: if (!MioCicloHabilitado) {return;}
+"230
 [e $ ! ! != -> _MioCicloHabilitado `i -> -> -> 0 `i `s `i 820  ]
 {
 [e $UE 819  ]
 }
 [e :U 820 ]
-[; ;RutinaModIO15.c: 237: if (!TpoSegF) {
-"237
+[; ;RutinaModIO15.c: 232: if (!TpoSegF) {
+"232
 [e $ ! ! != -> _TpoSegF `ui -> -> -> 0 `i `us `ui 821  ]
 {
-[; ;RutinaModIO15.c: 238: return;
-"238
+[; ;RutinaModIO15.c: 233: return;
+"233
 [e $UE 819  ]
-"239
+"234
 }
 [e :U 821 ]
-[; ;RutinaModIO15.c: 239: }
-[; ;RutinaModIO15.c: 242: TpoSegF=0;
-"242
+[; ;RutinaModIO15.c: 234: }
+[; ;RutinaModIO15.c: 237: TpoSegF=0;
+"237
 [e = _TpoSegF -> -> 0 `i `us ]
-[; ;RutinaModIO15.c: 243: MIOSegCont++;
-"243
+[; ;RutinaModIO15.c: 238: MIOSegCont++;
+"238
 [e ++ _MIOSegCont -> -> 1 `i `us ]
-[; ;RutinaModIO15.c: 244: if (MIOSegCont<MIOTpoDeltaMax){
-"244
+[; ;RutinaModIO15.c: 239: if (MIOSegCont<MIOTpoDeltaMax){
+"239
 [e $ ! < -> _MIOSegCont `ui -> _MIOTpoDeltaMax `ui 822  ]
 {
-[; ;RutinaModIO15.c: 246: if (MIOSegCont<MIOTpoDeltaMin){
-"246
+[; ;RutinaModIO15.c: 241: if (MIOSegCont<MIOTpoDeltaMin){
+"241
 [e $ ! < -> _MIOSegCont `ui -> _MIOTpoDeltaMin `ui 823  ]
 {
-[; ;RutinaModIO15.c: 247: return;
-"247
+[; ;RutinaModIO15.c: 242: return;
+"242
 [e $UE 819  ]
-"248
+"243
 }
 [e :U 823 ]
-[; ;RutinaModIO15.c: 248: }
-[; ;RutinaModIO15.c: 250: MIOAdcAjuste2_5();
-"250
+[; ;RutinaModIO15.c: 243: }
+[; ;RutinaModIO15.c: 245: MIOAdcAjuste2_5();
+"245
 [e ( _MIOAdcAjuste2_5 ..  ]
-[; ;RutinaModIO15.c: 252: if ( (abs(MIOAdcAct[0]-MIOAdcAnt[0])<MIOAdcDelta[0]) &&
-[; ;RutinaModIO15.c: 253: (abs(MIOAdcAct[1]-MIOAdcAnt[1])<MIOAdcDelta[1]) &&
-[; ;RutinaModIO15.c: 254: (abs(MIOAdcAct[2]-MIOAdcAnt[2])<MIOAdcDelta[2]) &&
-[; ;RutinaModIO15.c: 255: (abs(MIOAdcAct[3]-MIOAdcAnt[3])<MIOAdcDelta[3]) ) {
-"255
+[; ;RutinaModIO15.c: 247: if ( (abs(MIOAdcAct[0]-MIOAdcAnt[0])<MIOAdcDelta[0]) &&
+[; ;RutinaModIO15.c: 248: (abs(MIOAdcAct[1]-MIOAdcAnt[1])<MIOAdcDelta[1]) &&
+[; ;RutinaModIO15.c: 249: (abs(MIOAdcAct[2]-MIOAdcAnt[2])<MIOAdcDelta[2]) &&
+[; ;RutinaModIO15.c: 250: (abs(MIOAdcAct[3]-MIOAdcAnt[3])<MIOAdcDelta[3]) ) {
+"250
 [e $ ! && && && < ( _abs (1 - *U + &U _MIOAdcAct * -> -> -> 0 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux *U + &U _MIOAdcAnt * -> -> -> 0 `i `ui `ux -> -> # *U &U _MIOAdcAnt `ui `ux *U + &U _MIOAdcDelta * -> -> -> 0 `i `ui `ux -> -> # *U &U _MIOAdcDelta `ui `ux < ( _abs (1 - *U + &U _MIOAdcAct * -> -> -> 1 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux *U + &U _MIOAdcAnt * -> -> -> 1 `i `ui `ux -> -> # *U &U _MIOAdcAnt `ui `ux *U + &U _MIOAdcDelta * -> -> -> 1 `i `ui `ux -> -> # *U &U _MIOAdcDelta `ui `ux < ( _abs (1 - *U + &U _MIOAdcAct * -> -> -> 2 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux *U + &U _MIOAdcAnt * -> -> -> 2 `i `ui `ux -> -> # *U &U _MIOAdcAnt `ui `ux *U + &U _MIOAdcDelta * -> -> -> 2 `i `ui `ux -> -> # *U &U _MIOAdcDelta `ui `ux < ( _abs (1 - *U + &U _MIOAdcAct * -> -> -> 3 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux *U + &U _MIOAdcAnt * -> -> -> 3 `i `ui `ux -> -> # *U &U _MIOAdcAnt `ui `ux *U + &U _MIOAdcDelta * -> -> -> 3 `i `ui `ux -> -> # *U &U _MIOAdcDelta `ui `ux 824  ]
 {
-[; ;RutinaModIO15.c: 256: return;
-"256
+[; ;RutinaModIO15.c: 251: return;
+"251
 [e $UE 819  ]
-"257
+"252
 }
 [e :U 824 ]
-"258
+"253
 }
-[; ;RutinaModIO15.c: 257: }
-[; ;RutinaModIO15.c: 258: }
+[; ;RutinaModIO15.c: 252: }
+[; ;RutinaModIO15.c: 253: }
 [e $U 825  ]
-"259
+"254
 [e :U 822 ]
-[; ;RutinaModIO15.c: 259: else {MIOAdcAjuste2_5();}
+[; ;RutinaModIO15.c: 254: else {MIOAdcAjuste2_5();}
 {
 [e ( _MIOAdcAjuste2_5 ..  ]
 }
 [e :U 825 ]
-[; ;RutinaModIO15.c: 263: MioPreparaReg();
-"263
+[; ;RutinaModIO15.c: 258: MioPreparaReg();
+"258
 [e ( _MioPreparaReg ..  ]
-[; ;RutinaModIO15.c: 265: MrAgregaReg();
-"265
+[; ;RutinaModIO15.c: 260: MrAgregaReg();
+"260
 [e ( _MrAgregaReg ..  ]
-[; ;RutinaModIO15.c: 266: MIOSegCont=0;
-"266
+[; ;RutinaModIO15.c: 261: MIOSegCont=0;
+"261
 [e = _MIOSegCont -> -> 0 `i `us ]
-[; ;RutinaModIO15.c: 268: MIOAdcAnt[0]=MIOAdcAct[0];
-"268
+[; ;RutinaModIO15.c: 263: MIOAdcAnt[0]=MIOAdcAct[0];
+"263
 [e = *U + &U _MIOAdcAnt * -> -> -> 0 `i `ui `ux -> -> # *U &U _MIOAdcAnt `ui `ux *U + &U _MIOAdcAct * -> -> -> 0 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux ]
-[; ;RutinaModIO15.c: 269: MIOAdcAnt[1]=MIOAdcAct[1];
-"269
+[; ;RutinaModIO15.c: 264: MIOAdcAnt[1]=MIOAdcAct[1];
+"264
 [e = *U + &U _MIOAdcAnt * -> -> -> 1 `i `ui `ux -> -> # *U &U _MIOAdcAnt `ui `ux *U + &U _MIOAdcAct * -> -> -> 1 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux ]
-[; ;RutinaModIO15.c: 270: MIOAdcAnt[2]=MIOAdcAct[2];
-"270
+[; ;RutinaModIO15.c: 265: MIOAdcAnt[2]=MIOAdcAct[2];
+"265
 [e = *U + &U _MIOAdcAnt * -> -> -> 2 `i `ui `ux -> -> # *U &U _MIOAdcAnt `ui `ux *U + &U _MIOAdcAct * -> -> -> 2 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux ]
-[; ;RutinaModIO15.c: 271: MIOAdcAnt[3]=MIOAdcAct[3];
-"271
+[; ;RutinaModIO15.c: 266: MIOAdcAnt[3]=MIOAdcAct[3];
+"266
 [e = *U + &U _MIOAdcAnt * -> -> -> 3 `i `ui `ux -> -> # *U &U _MIOAdcAnt `ui `ux *U + &U _MIOAdcAct * -> -> -> 3 `i `ui `ux -> -> # *U &U _MIOAdcAct `ui `ux ]
-[; ;RutinaModIO15.c: 273: }
-"273
+[; ;RutinaModIO15.c: 268: }
+"268
 [e :UE 819 ]
 }
 "99 ModIO24.c

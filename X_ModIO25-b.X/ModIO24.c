@@ -13,7 +13,7 @@
 // COMANDO                         Comando           Contesta
 //******************************************************************************
 // 00h: Pregunta la version        Dir-00h           (Dir+80)-00h-Ap-Vv
-// 01h: Leer Entradas Anal�g/dig   Dir-01h           (Dir+80)-01h-EA-EA-Dig
+// 01h: Leer Entradas Analog/dig   Dir-01h           (Dir+80)-01h-EA-EA-Dig
 // 02h: Escribir a Sal Dig         Dir-02h-Dig       (Dir+80)-02h
 
 // 03h: RTC Lee:                   Dir-03h           (Dir80)-03-AA,Mes,DD,HH,Min,SS,DS
@@ -194,6 +194,10 @@ void Ppal_RsComando() { //  Solo si es para mi (RsDirDispositivo)
             memcpy (&(RsTxBuffer [4]),  &(MIOAdcLeido[1]), 2);
             memcpy (&(RsTxBuffer [6]),  &(MIOAdcLeido[2]), 2);
             memcpy (&(RsTxBuffer [8]),  &(MIOAdcLeido[3]), 2);
+            memcpy (&(RsTxBuffer [10]),  &(MIOAdcLeido[4]), 2);
+            memcpy (&(RsTxBuffer [12]),  &(MIOAdcLeido[5]), 2);
+            memcpy (&(RsTxBuffer [14]),  &(MIOAdcLeido[6]), 2);
+            memcpy (&(RsTxBuffer [16]),  &(MIOAdcLeido[7]), 2);
 
             EnableInterrupts;
             RsTxEnviaMsg(10);
@@ -301,6 +305,7 @@ void Ppal_RsComando() { //  Solo si es para mi (RsDirDispositivo)
             RsTxEnviaMsg(10);
             break;
 
+        //Preguntar si esto ya escribe en la eeprom
         case 0x0F: //Escribir un byte a memoria eeprom serial
             MseEsc(MonDir, &RsRxBuffer[4], 1);
             RsTxEnviaMsg(2);        // acknowledge
@@ -362,6 +367,10 @@ void Ppal_RsComando() { //  Solo si es para mi (RsDirDispositivo)
             memcpy (&(RsTxBuffer [4]),  &(MIOAdcAct[1]), 2);
             memcpy (&(RsTxBuffer [6]),  &(MIOAdcAct[2]), 2);
             memcpy (&(RsTxBuffer [8]),  &(MIOAdcAct[3]), 2);
+            memcpy (&(RsTxBuffer [10]),  &(MIOAdcAct[4]), 2);
+            memcpy (&(RsTxBuffer [12]),  &(MIOAdcAct[5]), 2);
+            memcpy (&(RsTxBuffer [14]),  &(MIOAdcAct[6]), 2);
+            memcpy (&(RsTxBuffer [16]),  &(MIOAdcAct[7]), 2);
 
             EnableInterrupts;
             RsTxEnviaMsg(10);
