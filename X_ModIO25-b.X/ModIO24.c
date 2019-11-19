@@ -188,7 +188,7 @@ void Ppal_RsComando() { //  Solo si es para mi (RsDirDispositivo)
             RsTxEnviaMsg(4);
             break;
 
-        case 0x01:  //Leer Entrada Analogica 0-3
+        case 0x01:  //Leer Entrada Analogica 0-7
             DisableInterrupts;
             memcpy (&(RsTxBuffer [2]),  &(MIOAdcLeido[0]), 2);
             memcpy (&(RsTxBuffer [4]),  &(MIOAdcLeido[1]), 2);

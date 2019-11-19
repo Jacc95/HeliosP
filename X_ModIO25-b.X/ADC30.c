@@ -7,7 +7,7 @@ void ADC_Init() {
     TRISA = 0x2F;       //Puertos RA0 -> RA2, RA3 (Ref3.3v) & RA5 inputs. The rest either outputs or N.C.
     //Puerto B
     TRISB = 0xFF;       //RB2 -> RB5 son entradas, RB6 -> RB7 programmer & el resto overwrite despues
-    
+    TRISC = 0x80;       //RC7 es entrada RX del UART
     
     ANSELA = 0x2F;      //AN0->AN4 (RA0->RA3,RA5) : son analogicas
     ANSELB = 0x3C;      //RB2 -> RB5 son entradas analogicas

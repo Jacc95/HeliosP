@@ -12,8 +12,8 @@
 #define RsBOT      254
 #define RsEOT      255
 #define RsCarDoble 250
-#define RsRxBufferLenMax  30
-#define RsTxBufferLenMax  30
+#define RsRxBufferLenMax  32
+#define RsTxBufferLenMax  32
 char RsRxBuffer [RsRxBufferLenMax];
 char RsTxBuffer [RsTxBufferLenMax];
 int RsRxBufferLen, RsTxBufferLen;

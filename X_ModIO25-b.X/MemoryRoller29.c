@@ -3,13 +3,14 @@
 //#define MrPrueba1           // usar RAM
 //------------------------------------------------------------------------------
 //#define MrLen       7       // debeser >= 7.  (5 de datos +2 de la hora)
-#define MrLen       12       // debeser >= 8.  (8 entradas (4+2)bytes= 6 de datos +2 de la hora)
+#define MrLen       18       // debeser >= 8.  (8 entradas (8*2)bytes= 16 de datos +2 de la hora = 18)
 #define MrPor       255     // indica asterisco
 #define MrPorFecha  254     // indica registro de fecha
 //#define MrNRegMax   10    // # Regs total (8000 para 24LC512)
 #define MrNRegMax   1000     // # Regs total (0 -> 999)   (Limite 4K Reg)
 //#define MrNRegMax   4000     // # Regs total (8000 para 24LC512)(4000 24LC256(?)   
-#define MrGpoLen    32      // # bytes / grupo (pag, sector, etc). (64 para 24LC256) (128 para 24LC512)
+#define MrGpoLen    64      // # bytes / grupo (pag, sector, etc). (64 para 24LC256) (128 para 24LC512)
+                            // Usar 3 registros por grupo
 //bit MrInicializado = 0;
 bit MrInicializado;
 //------------------------------------------------------------------------------

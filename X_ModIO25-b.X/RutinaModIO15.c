@@ -201,23 +201,23 @@ void MIOAdcAjuste2_5(){       //Prepara para calibracion a 2.5
 //------------------------------------------------------------------------------
 void MioPreparaReg(){       // compacta  10bits-->8bits + 2bits
     //MrReg de la PC : MrReg {2} del Pic corresponde al MrReg[4] de la PC
-    MrReg[2] = MIOAdcAct[0] >> 4;   //cambia registros 10 bits a 8 bits
-    MrReg[3] = MIOAdcAct[1] >> 4;   //(toma 8 bits más significativos)
-    MrReg[4] = MIOAdcAct[2] >> 4;
-    MrReg[5] = MIOAdcAct[3] >> 4;
-    MrReg[6] = MIOAdcAct[4] >> 4;   //cambia registros 10 bits a 8 bits
-    MrReg[7] = MIOAdcAct[5] >> 4;   //(toma 8 bits más significativos)
-    MrReg[8] = MIOAdcAct[6] >> 4;
-    MrReg[9] = MIOAdcAct[7] >> 4;
+    MrReg[2] = MIOAdcAct[0] >> 4;   //cambia registros 16 bits a 12 bits
+    MrReg[3] = (MIOAdcAct[0] << 4) & 0xFF;   //(toma 12 bits más significativos)
+    MrReg[4] = MIOAdcAct[1] >> 4;
+    MrReg[5] = (MIOAdcAct[1] << 4) & 0xFF;
+    MrReg[6] = MIOAdcAct[2] >> 4;
+    MrReg[7] = (MIOAdcAct[2] << 4) & 0xFF;
+    MrReg[8] = MIOAdcAct[3] >> 4;
+    MrReg[9] = (MIOAdcAct[3] << 4) & 0xFF;
+    MrReg[10] = MIOAdcAct[4] >> 4;
+    MrReg[11] = (MIOAdcAct[4] << 4) & 0xFF;
+    MrReg[12] = MIOAdcAct[5] >> 4;
+    MrReg[13] = (MIOAdcAct[5] << 4) & 0xFF;
+    MrReg[14] = MIOAdcAct[6] >> 4;
+    MrReg[15] = (MIOAdcAct[6] << 4) & 0xFF;
+    MrReg[16] = MIOAdcAct[7] >> 4;
+    MrReg[17] = (MIOAdcAct[7] << 4) & 0xFF;
     
-    MrReg[10] = (  ((MIOAdcAct[0] & 0xF) << 4) + //toma 2 bits menos significativos 
-                  ((MIOAdcAct[1] & 0xF) ) ) & 0xFF;
-    MrReg[11] = (  ((MIOAdcAct[2] & 0xF) << 4) + //toma 2 bits menos significativos 
-                  ((MIOAdcAct[3] & 0xF) ) ) & 0xFF;
-    MrReg[12] = (  ((MIOAdcAct[4] & 0xF) << 4) + //toma 2 bits menos significativos 
-                  ((MIOAdcAct[5] & 0xF) ) ) & 0xFF;
-    MrReg[13] = (  ((MIOAdcAct[6] & 0xF) << 4) + //toma 2 bits menos significativos 
-                  ((MIOAdcAct[7] & 0xF) ) ) & 0xFF;
 }
 //void MioPreparaReg(){       // compacta  10bits-->8bits + 2bits
 //    int temp2;
